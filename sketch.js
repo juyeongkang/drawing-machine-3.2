@@ -1,26 +1,28 @@
 
-let noiseOFFset = 0.0;
-let strokeWidth = 10;
+let noiseOFFset = 0.5;
+let strokeWidth = 30;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(2, 72, 115);
+  background(10);
 
 }
 
 
 function draw() {
 
-  background(2, 72, 115,20);
+  background(101, 74, 100,0);
   strokeWeight(strokeWidth);
 
 
-  noiseOFFset += 0.07;
-  strokeWidth = noise(noiseOFFset) * 53;
+  noiseOFFset += 0.01;
+  strokeWidth = noise(noiseOFFset) * 100;
 
 
 
-  stroke(map(mouseX, 0, 600, 0, 255, true))
+  //stroke(map(mouseX, 0, 600, 0, 255, true))//
+  stroke(map(mouseX,  0, 600, 0, 255, true))
   line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
   line(mouseX, mouseY, pmouseX, pmouseY);
 

@@ -7,8 +7,16 @@ html, body {
     margin: 100px auto 0 auto;
     width: 80%;
     text-align: center;
-    font-family: "courier", monospace;
+    font-size: 19px;
+  font-family: 'Reenie Beanie', cursive;
   }
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 48%;
+  length: auto;
+}
 canvas {
   display: block;
   border: 5px solid black;
