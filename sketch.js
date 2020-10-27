@@ -30,11 +30,12 @@ function draw() {
 
 function keyTyped() {
 
+
   if (key === 's') {
     // save this image
-    saveCanvas('fileName', 'png');
+    //saveCanvas('fileName', 'png');
   } else if (key === 'c') {
-    // clear the image
+    // show all of image
     clear();
 
 
